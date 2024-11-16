@@ -138,37 +138,37 @@ header h1 {
                 </thead>
                 <tbody id="cartItems">
                     <!-- Cart Item 1 -->
-                    <tr data-price="59.99">
+                    <tr data-price="3499.00">
                         <td>
                             <img src="Images1/coat suit.jpg" alt="Product Image" style="height: 60; width: 60;" class="img-fluid me-2"> Coat Suits
                         </td>
                         <td>
                             <input type="number" value="1" min="1" class="form-control form-control-sm quantity w-50" onchange="updateCart()">
                         </td>
-                        <td>$59.99</td>
-                        <td class="item-total">$59.99</td>
+                        <td>₹3499.00</td>
+                        <td class="item-total">₹3499.00</td>
                         <td><button class="btn btn-danger btn-sm" onclick="removeItem(this)">Remove</button></td>
                     </tr>
                     <!-- Repeat similar blocks for more products -->
-                    <tr data-price="89.99">
+                    <tr data-price="150.99">
                         <td><img src="Images1/Sunglasses.jpg" alt="Product Image" style="height: 60;width: 60;" class="img-fluid me-2">Sunglasses</td>
                         <td><input type="number" value="1" min="1" class="form-control form-control-sm quantity w-50" onchange="updateCart()"></td>
-                        <td>$89.99</td>
-                        <td class="item-total">$89.99</td>
+                        <td>₹150.99</td>
+                        <td class="item-total">₹150.99</td>
                         <td><button class="btn btn-danger btn-sm" onclick="removeItem(this)">Remove</button></td>
                     </tr>
-                    <tr data-price="39.99">
+                    <tr data-price="1499.99">
                         <td><img src="Images1/Leather Handbag.jpg" alt="Product Image" style="height: 60;width: 60;"  class="img-fluid me-2">Leather Handbag</td>
                         <td><input type="number" value="1" min="1" class="form-control form-control-sm quantity w-50" onchange="updateCart()"></td>
-                        <td>$39.99</td>
-                        <td class="item-total">$39.99</td>
+                        <td>₹1499.99</td>
+                        <td class="item-total">₹1499.99</td>
                         <td><button class="btn btn-danger btn-sm" onclick="removeItem(this)">Remove</button></td>
                     </tr>
-                    <tr data-price="29.99">
+                    <tr data-price="999.00">
                         <td><img src="Images1/Sport Shoes.jpg"  style="height: 60;width: 60;" alt="Product Image" class="img-fluid me-2">Shoes</td>
                         <td><input type="number" value="1" min="1" class="form-control form-control-sm quantity w-50" onchange="updateCart()"></td>
-                        <td>$29.99</td>
-                        <td class="item-total">$29.99</td>
+                        <td>₹999.00</td>
+                        <td class="item-total">₹999.00</td>
                         <td><button class="btn btn-danger btn-sm" onclick="removeItem(this)">Remove</button></td>
                     </tr>
                 </tbody>
@@ -191,13 +191,13 @@ header h1 {
                         <li class="d-flex justify-content-between">
                             <span>Fast Delivery <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z"/></svg></span>
                             <span>
-                                <input type="checkbox" id="fastDelivery" onchange="updateCart()"> +$15.00
+                                <input type="checkbox" id="fastDelivery" onchange="updateCart()"> +₹100.00
                             </span>
                         </li>
                         <hr>
                         <li class="d-flex justify-content-between fw-bold">
                             <span>Total</span>
-                            <span id="total">$0.00</span>
+                            <span id="total">₹0.00</span>
                         </li>
                     </ul>
                     <button class="btn btn-primary w-100 mt-3"  type="submit" data-bs-toggle="modal" data-bs-target="#order"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#FFFFFF"><path d="M480-569.33 433.33-616l70.34-70.67h-177v-66.66h177L433-824l47-46.67L630.67-720 480-569.33ZM286.53-80q-30.86 0-52.7-21.97Q212-123.95 212-154.81q0-30.86 21.98-52.69 21.97-21.83 52.83-21.83t52.69 21.97q21.83 21.98 21.83 52.84 0 30.85-21.97 52.69Q317.38-80 286.53-80Zm402.66 0q-30.86 0-52.69-21.97-21.83-21.98-21.83-52.84 0-30.86 21.97-52.69 21.98-21.83 52.84-21.83 30.85 0 52.69 21.97Q764-185.38 764-154.52q0 30.85-21.97 52.69Q720.05-80 689.19-80ZM54.67-813.33V-880h121l170 362.67H630.8l158.87-280h75L698-489.33q-11 19.33-28.87 30.66-17.88 11.34-39.13 11.34H328.67l-52 96H764v66.66H282.67q-40.11 0-61.06-33-20.94-33-2.28-67L280-496 133.33-813.33H54.67Z"/></svg> Proceed to Checkout</button>
@@ -310,14 +310,14 @@ header h1 {
         const price = parseFloat(row.dataset.price);
         const quantity = row.querySelector(".quantity").value;
         const itemTotal = price * quantity;
-        row.querySelector(".item-total").textContent = `$${itemTotal.toFixed(2)}`;
+        row.querySelector(".item-total").textContent = `₹${itemTotal.toFixed(2)}`;
         subtotal += itemTotal;
     });
 
     // Update subtotal and total
-    document.getElementById("subtotal").textContent = `$${subtotal.toFixed(2)}`;
+    document.getElementById("subtotal").textContent = `₹${subtotal.toFixed(2)}`;
     const total = subtotal + fastDelivery;
-    document.getElementById("total").textContent = `$${total.toFixed(2)}`;
+    document.getElementById("total").textContent = `₹${total.toFixed(2)}`;
 }
 
 function removeItem(button) {
