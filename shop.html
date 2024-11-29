@@ -129,7 +129,7 @@ input[type="range"] {
                   <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
                 </svg> Login</a></li>
               <li class="nav-item"><a class="nav-link" style="font-size: 22px;color: black;" href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M480-440v-360q0-17 11.5-28.5T520-840h280q17 0 28.5 11.5T840-800v200q0 17-11.5 28.5T800-560H600L480-440Zm80-200h200v-120H560v120Zm0 0v-120 120Zm238 520q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>Contact</a></li>
-              <li class="nav-item"><a class="nav-link " style="font-size: 22px;color: black;" href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>Cart</a></li>
+              <li class="nav-item"><a class="nav-link " style="font-size: 22px;color: black;" href="#cartpage"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>Cart</a></li>
           </ul>
         </div>
     </div>
@@ -152,30 +152,136 @@ input[type="range"] {
             <h6>Price Range <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M444-200h70v-50q50-9 86-39t36-89q0-42-24-77t-96-61q-60-20-83-35t-23-41q0-26 18.5-41t53.5-15q32 0 50 15.5t26 38.5l64-26q-11-35-40.5-61T516-710v-50h-70v50q-50 11-78 44t-28 74q0 47 27.5 76t86.5 50q63 23 87.5 41t24.5 47q0 33-23.5 48.5T486-314q-33 0-58.5-20.5T390-396l-66 26q14 48 43.5 77.5T444-252v52Zm36 120q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></h6>
             <input type="range" id="priceRange" class="form-range" min="0" max="200" step="10" value="200" oninput="updatePriceLimit(this.value)">
             <p>Price Limit: ₹<span id="priceLimit">8000</span></p>
-            <a href="cart.html" class="btn btn-primary btn-sm fs-4"><svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#FFFFFF"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>View Cart</a>
+            <a href="#cartpage" class="btn btn-primary btn-sm fs-4"><svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#FFFFFF"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>View Cart</a>
         </aside>
 
         <!-- Product Grid -->
          
         <section class="col-md-9">
             <div class="row" id="productGrid">
-                                <!-- Product Card 1 -->
-                                <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="99">
-                                    <div class="card product-card">
-                                        <img src="Images1/sherwani.jpg" class="card-img-top" alt="Ethnic Wear">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Ethnic Wear</h5>
-                                            <p class="card-text">₹2999.00</p>
-                                            <a href="#" class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal" data-bs-target="#ethnic">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                                              </svg></a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
-                                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-                                            </svg>
+                <div class="row" id="productGrid">
+                    <!-- Product Card 1 -->
+                    <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="49">
+                        <div class="card product-card">
+                            <img src="Images1/jacket.jpg" class="card-img-top" alt="Stylish Jacket" >
+                            <div class="card-body">
+                                <h5 class="card-title">Stylish Jacket</h5>
+                                <p class="card-text">₹549.99</p>
+                                <a href="#" class="btn btn-primary btn-sm" style="vertical-align: middle;" onclick="addToCart('Stylish Jacket', 549, 'Images1/jacket.jpg')" type="submit" data-bs-toggle="modal" data-bs-target="#jacket">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                  </svg></a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                                                    <!-- Modal -->
+            <div class="modal fade" id="jacket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Cart Results</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    Stylish Jacket Added to your cart 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                           
+                    <!-- Product Card 2 -->
+                    <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="89">
+                        <div class="card product-card">
+                            <img src="Images1/coat suit.jpg" class="card-img-top" alt="Coat Suit" >
+                            <div class="card-body">
+                                <h5 class="card-title">Coat Suit</h5>
+                                <p class="card-text">₹3499.99</p>
+                                <a href="#" class="btn btn-primary btn-sm" onclick="addToCart('Coat Suit', 3499, 'Images1/coat suit.jpg')"  type="submit" data-bs-toggle="modal" data-bs-target="#coat">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                  </svg></a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                                    <!-- Modal -->
+            <div class="modal fade" id="coat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Cart Results</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Coat Suit Added to your cart 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                    <!-- Product Card 3 -->
+                    <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="59">
+                        <div class="card product-card">
+                            <img src="Images1/Dhothis.jpg" class="card-img-top" alt="Traiditional Dhotis" style="height: 300;">
+                            <div class="card-body">
+                                <h5 class="card-title">Traiditional Dhotis</h5>
+                                <p class="card-text">₹450.99</p>
+                                <a href="#" class="btn btn-primary btn-sm" onclick="addToCart('Traiditional Dhothis', 450, 'Images1/Dhothis.jpg')" type="submit" data-bs-toggle="modal" data-bs-target="#dhotis">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                  </svg></a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="dhotis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Cart Results</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Traiditional Dhotis Added to your cart 
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Done</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                </div>
+                                <!-- Product Card 4 -->
+ <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="99">
+ <div class="card product-card">
+ <img src="Images1/sherwani.jpg" class="card-img-top" alt="Ethnic Wear">
+ <div class="card-body">
+<h5 class="card-title">Ethnic Wear</h5>
+  <p class="card-text">₹2999.00</p>
+ <a href="#" class="btn btn-primary btn-sm" type="submit" onclick="addToCart('Ethnic Wear', 2999, 'Images1/sherwani.jpg')"  data-bs-toggle="modal" data-bs-target="#ethnic"  >Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+ </svg></a>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
+   <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+ </svg>
                                                    
-                                        </div>
-                                    </div>
-                                </div>
+    </div>
+ </div>
+   </div>
+                            
                                                  <!-- Modal -->
 <div class="modal fade" id="ethnic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -194,14 +300,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                                <!-- Product Card 2 -->
+                                <!-- Product Card 5 -->
                                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="80">
                                     <div class="card product-card">
                                         <img src="Images1/Formal Shirt.jpg" class="card-img-top" alt="Formal Shirts">
                                         <div class="card-body">
                                             <h5 class="card-title">Formal Shirts</h5>
                                             <p class="card-text">₹300.00</p> 
-                                            <a href="#" class="btn btn-primary btn-sm"  type="submit" data-bs-toggle="modal" data-bs-target="#formal">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Formal Shirt', 300, 'Images1/Formal Shirt.jpg')"  type="submit" data-bs-toggle="modal" data-bs-target="#formal">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                                               </svg></a>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -228,14 +334,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                                <!-- Product Card 3 -->
+                                <!-- Product Card 6 -->
                                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="110">
                                     <div class="card product-card">
                                         <img src="Images1/Activewear.jpg" class="card-img-top" alt="Activewear">
                                         <div class="card-body">
                                             <h5 class="card-title">Activewear</h5>
                                             <p class="card-text">₹850.00</p>
-                                            <a href="#" class="btn btn-primary btn-sm"  type="submit" data-bs-toggle="modal" data-bs-target="#active">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('ActiveWear', 850, 'Images1/ActiveWear.jpg')"  type="submit" data-bs-toggle="modal" data-bs-target="#active">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                                               </svg></a>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -262,14 +368,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                <!-- Product Card 4 -->
+                <!-- Product Card 7 -->
                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="49">
                     <div class="card product-card">
                         <img src="Images1/t-shirt.jpg" class="card-img-top" alt="Casual T-Shirt" height="300">
                         <div class="card-body">
                             <h5 class="card-title">Casual T-Shirt</h5>
                             <p class="card-text">₹249.99</p>
-                            <a href="#" class="btn btn-primary btn-sm"  type="submit" data-bs-toggle="modal" data-bs-target="#Tshirts">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Casual T-Shirt', 249, 'Images1/t-shirt.jpg')"  type="submit" data-bs-toggle="modal" data-bs-target="#Tshirts">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -296,14 +402,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                <!-- Product Card 5 -->
+                <!-- Product Card 8 -->
                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="89">
                     <div class="card product-card">
                         <img src="Images1/shorts.jpg" class="card-img-top" alt="Shorts" height="350">
                         <div class="card-body">
                             <h5 class="card-title">Shorts</h5>
                             <p class="card-text">₹150.99</p>
-                            <a href="#" class="btn btn-primary btn-sm"  type="submit" data-bs-toggle="modal" data-bs-target="#shorts">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Shorts', 150, 'Images1/shorts.jpg')"  type="submit" data-bs-toggle="modal" data-bs-target="#shorts">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -330,14 +436,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                <!-- Product Card 6 -->
+                <!-- Product Card 9 -->
                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="59">
                     <div class="card product-card">
                         <img src="Images1/blue jeans.jpg" class="card-img-top" alt="Trendy Jeans">
                         <div class="card-body">
                             <h5 class="card-title">Trendy Jeans</h5>
                             <p class="card-text">₹699.99</p>
-                            <a href="#" class="btn btn-primary btn-sm"  type="submit" data-bs-toggle="modal" data-bs-target="#jeans">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Trendy Jeans', 699, 'Images1/blue jeans.jpg')"  type="submit" data-bs-toggle="modal" data-bs-target="#jeans">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -365,14 +471,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                <!-- Product Card 7 -->
+                <!-- Product Card 10 -->
                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="120">
                     <div class="card product-card">
                         <img src="Images1/Leather Handbag.jpg" class="card-img-top" alt="Leather Handbag">
                         <div class="card-body">
                             <h5 class="card-title">Leather Handbag</h5>
                             <p class="card-text">₹1499.00</p>
-                            <a href="#" class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal" data-bs-target="#bag">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Leather Handbag', 1499, 'Images1/Leather Handbag.jpg')" type="submit" data-bs-toggle="modal" data-bs-target="#bag">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -399,14 +505,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                <!-- Product Card 8 -->
+                <!-- Product Card 11 -->
                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="70">
                     <div class="card product-card">
                         <img src="Images1/hoody.jpg" class="card-img-top" height="300" w alt="Summer Dress">
                         <div class="card-body">
                             <h5 class="card-title">Hoody</h5>
                             <p class="card-text">₹400.00</p>
-                            <a href="#" class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal" data-bs-target="#hoody">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Hoody', 400, 'Images1/hoody.jpg')" type="submit" data-bs-toggle="modal" data-bs-target="#hoody">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -433,14 +539,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                <!-- Product Card 9 -->
+                <!-- Product Card 12 -->
                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="40">
                     <div class="card product-card">
                         <img src="Images1/Sport Shoes.jpg" class="card-img-top" alt="Sport Shoes">
                         <div class="card-body">
                             <h5 class="card-title">Sport Shoes</h5>
                             <p class="card-text">₹999.00</p>
-                            <a href="#" class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal" data-bs-target="#shoes">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Sport Shoes', 999, 'Images1/Sport Shoes.jpg')" type="submit" data-bs-toggle="modal" data-bs-target="#shoes">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -467,14 +573,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                <!-- Product Card 10 -->
+                <!-- Product Card 13 -->
                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="99">
                     <div class="card product-card">
                         <img src="Images1/Wool Scarf.jpg" class="card-img-top" alt="Wool Scarf">
                         <div class="card-body">
                             <h5 class="card-title">Wool Scarf</h5>
                             <p class="card-text">₹199.00</p>
-                            <a href="#" class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal" data-bs-target="#scarf">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Wool Scarf', 199, 'Images1/Wool Scarf.jpg')" type="submit" data-bs-toggle="modal" data-bs-target="#scarf">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -501,14 +607,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                <!-- Product Card 11 -->
+                <!-- Product Card 14 -->
                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="80">
                     <div class="card product-card">
                         <img src="Images1/Classic Sunglasses.jpg" class="card-img-top" alt="Classic Sunglasses">
                         <div class="card-body">
                             <h5 class="card-title">Classic Sunglasses</h5>
                             <p class="card-text">₹150.00</p>
-                            <a href="#" class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal" data-bs-target="#glass">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Classic Sunglasses', 150, 'Images1/Classic Sunglasses.jpg')" type="submit" data-bs-toggle="modal" data-bs-target="#glass">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -535,14 +641,14 @@ input[type="range"] {
       </div>
     </div>
     </div>
-                <!-- Product Card 12 -->
+                <!-- Product Card 15 -->
                 <div class="col-sm-6 col-lg-4 mb-4 product-item" data-price="110">
                     <div class="card product-card">
                         <img src="Images1/Wrist watch.jpg" class="card-img-top" alt="Wrist Watch">
                         <div class="card-body">
                             <h5 class="card-title">Wrist Watch</h5>
                             <p class="card-text">₹400.00</p>
-                            <a href="#" class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal" data-bs-target="#watch">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <a href="#" class="btn btn-primary btn-sm"  onclick="addToCart('Wrist watch', 400, 'Images1/Wrist watch.jpg')" type="submit" data-bs-toggle="modal" data-bs-target="#watch">Add to Cart <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill heart-icon" viewBox="0 0 16 16" onclick="toggleFavorite(this)">
@@ -574,44 +680,190 @@ input[type="range"] {
         </section>
     </div>
 </div>
-<br>
+
 <a href="register.html" class="btn btn-primary btn-sm fs-4" style="margin-left: 45%;">&#10148; Register to Buy</a>
 <br>
-<br>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion E-Commerce - Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table img {
+    border-radius: 4px;
+}
+
+.card-body h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer {
+ 
+ background-color: #343a40;
+ color: #ffffff;
+ padding:1;
+ width: 100%;
+}
+.footer a {
+ color: #adb5bd;
+ text-decoration: none;
+}
+.footer a:hover {
+ color: #ffffff;
+ text-decoration: underline;
+}
+.footer-title {
+ font-weight: bold;
+ margin-bottom: 15px;
+}
+.footer-social-icons a {
+ font-size: 20px;
+ color: #adb5bd;
+ margin: 0 10px;
+}
+.footer-social-icons a:hover {
+ color: #ffffff;
+}
+.footer-bottom {
+ padding: 10px 0;
+ border-top: 1px solid #495057;
+ margin-top: 20px;
+ font-size: 14px;
+ text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+
+
+
+<!-- Page Header -->
+<header class="bg-light py-5 text-center" id="cartpage">
+    <div class="container">
+       <h1>Your Shopping Cart</h1>
+        <p>Choose dresses , Review and manage the items in your cart.</p>
+    </div>
+</header>
+
+<!-- Cart Section -->
+
+  <ol id="cart" class=" p-3"  style="border: 0.5px solid black;" ></ol>
+  
+   <!-- Order Summary -->
+   <section class="col-md-4" >
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Order Summary <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M165-480 45-688l264-152h51q16 48 38 84t82 36q60 0 82-36t38-84h51l263 153-119 207-75-41v192l-63 55q-3 2-8 5t-9 5v-393l125 69 40-70-153-89q-24 49-70.5 78T480-640q-55 0-101.5-29T308-747l-154 89 41 70 125-69v237q-21 2-41 6.5T240-401v-120l-75 41Zm21 295-52-61 87-74q23-20 52.5-30.5T335-361q32 0 61 10.5t52 30.5l116 99q12 10 28.5 15.5T626-200q18 0 33.5-5t27.5-16l87-75 52 62-87 74q-23 20-52 30t-61 10q-32 0-61.5-10T512-160l-116-99q-12-10-27.5-15.5T335-280q-17 0-33.5 5.5T273-259l-87 74Zm294-455Z"/></svg></h5>
+            <ul class="list-unstyled">
+                <li class="d-flex justify-content-between">
+                    <span>Subtotal <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                      </svg></span>
+                    <span id="subtotal">₹0.00</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                    <span>Fast Delivery <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z"/></svg></span>
+                    <span>
+                        <input type="checkbox" id="fastDelivery" onchange="updateCart()"> +₹100.00
+                    </span>
+                </li>
+                <hr>
+                <li class="d-flex justify-content-between fw-bold">
+                    <span>Total</span>
+                    <span id="total">₹0.00</span>
+                </li>
+            </ul>
+
+
+  <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#order">Proceed to Checkout</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Order Confirmation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+              <h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg> Thank You for Shopping!<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#343a40"><path d="M360-80v-529q-91-24-145.5-100.5T160-880h80q0 83 53.5 141.5T430-680h100q30 0 56 11t47 32l181 181-56 56-158-158v478h-80v-240h-80v240h-80Zm120-640q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720Z"/></svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg></div>
+      </div>
+  </div>
+</div>
+    </div>
+   </section>
 <footer class="footer">
     <div class="container">
         <div class="row">
             <!-- About Section -->
             <div class="col-md-4 mb-4">
                 <h5 class="footer-title"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m606-286-33-144 111-96-146-13-58-136v312l126 77ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>About Us</h5>
-                <p>Fashionista is your go-to destination for the latest trends in fashion. Explore a wide range of apparel and accessories for every style.</p>
+                <p>Our Mens Wear Shop is your go-to destination for the latest trends in fashion. Explore a wide range of apparel and accessories for every style.</p>
             </div>
 
             <!-- Quick Links Section -->
             <div class="col-md-2 mb-4">
                 <h5 class="footer-title"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-120q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T560-280q0-33-23.5-56.5T480-360q-33 0-56.5 23.5T400-280q0 33 23.5 56.5T480-200ZM122-616l-59-55q81-79 188-124t229-45q122 0 229 45t188 124l-59 55q-71-67-162-105.5T480-760q-105 0-196 38.5T122-616Zm570 137q-42-38-96-59.5T480-560q-62 0-115.5 21.5T268-479l-59-55q54-50 123.5-78T480-640q78 0 147 28t123 78l-58 55ZM480-280Z"/></svg> Quick Links</h5>
                 <ul class="list-unstyled">
-                  <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#adb5bd"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>Home</a></li>
-                  <li><a href="shop.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#adb5bd"><path d="M192-696v-72h576v72H192Zm0 528v-216h-48v-72l48-192h576l48 192v72h-48v216h-72v-216H528v216H192Zm72-72h192v-144H264v144Zm-46-216h524-524Zm0 0h524l-30-120H248l-30 120Z"/></svg>Shop</a></li>
-                  <li><a href="about.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"  fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                      <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                    </svg>About</a></li>
-                    <li><a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#adb5bd"><path d="M480-481v-300q0-15.3 10.35-25.65Q500.7-817 516-817h264q15.3 0 25.65 10.35Q816-796.3 816-781v168q0 15.3-10.35 25.65Q795.3-577 780-577H576l-96 96Zm72-168h192v-96H552v96Zm0 0v-96 96Zm211 504q-121-9-229.5-59.5T339-341q-86-86-136-194.5T144-765q-2-21 12.29-36.5Q170.57-817 192-817h136q17 0 29.5 10.5T374-780l24 107q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-75H218q5 38 14 74t23 71Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>Contact</a></li>
-                    <li><a href="register.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
-                      <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                      <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
-                    </svg>Register</a></li>
-                  <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
-                      <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-                    </svg> Login</a></li>
-                  <li><a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#adb5bd"><path d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z"/></svg>Cart</a></li>
-              </ul>
+                    <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#adb5bd"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>Home</a></li>
+                    <li><a href="shop.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#adb5bd"><path d="M192-696v-72h576v72H192Zm0 528v-216h-48v-72l48-192h576l48 192v72h-48v216h-72v-216H528v216H192Zm72-72h192v-144H264v144Zm-46-216h524-524Zm0 0h524l-30-120H248l-30 120Z"/></svg>Shop</a></li>
+                    <li><a href="about.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"  fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                      </svg>About</a></li>
+                      <li><a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#adb5bd"><path d="M480-481v-300q0-15.3 10.35-25.65Q500.7-817 516-817h264q15.3 0 25.65 10.35Q816-796.3 816-781v168q0 15.3-10.35 25.65Q795.3-577 780-577H576l-96 96Zm72-168h192v-96H552v96Zm0 0v-96 96Zm211 504q-121-9-229.5-59.5T339-341q-86-86-136-194.5T144-765q-2-21 12.29-36.5Q170.57-817 192-817h136q17 0 29.5 10.5T374-780l24 107q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-75H218q5 38 14 74t23 71Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>Contact</a></li>
+                      <li><a href="register.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                      </svg>Register</a></li>
+                    <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                      </svg> Login</a></li>
+                    <li><a href="shop.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#adb5bd"><path d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z"/></svg>Cart</a></li>
+                </ul>
             </div>
 
             <!-- Customer Service Section -->
             <div class="col-md-2 mb-4">
-                <h5 class="footer-title"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"/></svg>Customer Service</h5>
+                <h5 class="footer-title"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"/></svg> Customer Service</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Shipping & Returns</a></li>
@@ -623,8 +875,8 @@ input[type="range"] {
             <!-- Follow Us Section -->
             <div class="col-md-4 mb-4 text-center text-md-start">
                 <h5 class="footer-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-phone-vibrate-fill" viewBox="0 0 16 16">
-                  <path d="M4 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm5 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0M1.807 4.734a.5.5 0 1 0-.884-.468A8 8 0 0 0 0 8c0 1.347.334 2.618.923 3.734a.5.5 0 1 0 .884-.468A7 7 0 0 1 1 8c0-1.18.292-2.292.807-3.266m13.27-.468a.5.5 0 0 0-.884.468C14.708 5.708 15 6.819 15 8c0 1.18-.292 2.292-.807 3.266a.5.5 0 0 0 .884.468A8 8 0 0 0 16 8a8 8 0 0 0-.923-3.734M3.34 6.182a.5.5 0 1 0-.93-.364A6 6 0 0 0 2 8c0 .769.145 1.505.41 2.182a.5.5 0 1 0 .93-.364A5 5 0 0 1 3 8c0-.642.12-1.255.34-1.818m10.25-.364a.5.5 0 0 0-.93.364c.22.563.34 1.176.34 1.818s-.12 1.255-.34 1.818a.5.5 0 0 0 .93.364C13.856 9.505 14 8.769 14 8s-.145-1.505-.41-2.182"/>
-                </svg> Follow Us on</h5>
+                    <path d="M4 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm5 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0M1.807 4.734a.5.5 0 1 0-.884-.468A8 8 0 0 0 0 8c0 1.347.334 2.618.923 3.734a.5.5 0 1 0 .884-.468A7 7 0 0 1 1 8c0-1.18.292-2.292.807-3.266m13.27-.468a.5.5 0 0 0-.884.468C14.708 5.708 15 6.819 15 8c0 1.18-.292 2.292-.807 3.266a.5.5 0 0 0 .884.468A8 8 0 0 0 16 8a8 8 0 0 0-.923-3.734M3.34 6.182a.5.5 0 1 0-.93-.364A6 6 0 0 0 2 8c0 .769.145 1.505.41 2.182a.5.5 0 1 0 .93-.364A5 5 0 0 1 3 8c0-.642.12-1.255.34-1.818m10.25-.364a.5.5 0 0 0-.93.364c.22.563.34 1.176.34 1.818s-.12 1.255-.34 1.818a.5.5 0 0 0 .93.364C13.856 9.505 14 8.769 14 8s-.145-1.505-.41-2.182"/>
+                  </svg> Follow Us on</h5>
                 <div class="footer-social-icons">
                     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                         <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
@@ -639,14 +891,94 @@ input[type="range"] {
                         <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                       </svg> TwitterX</a>
                 </div>
-             
+ 
             </div>
         </div>
-        <script>
-            function toggleFavorite(icon) {
-              icon.classList.toggle('filled');
-          }
-      </script>
+
+
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ <script>
+  let cart = [];
+let total = 0;
+
+function addToCart(name, price, img) {
+  const cartItemIndex = cart.findIndex(item => item.name === name);
+  if (cartItemIndex > -1) {
+      // If item already exists, increment its quantity
+      cart[cartItemIndex].quantity += 1;
+  } else {
+      // Add new item to the cart
+      cart.push({ name, price, img, quantity: 1 });
+  }
+  total += price; // Update total
+  renderCart();
+}
+
+function renderCart() {
+  const cartList = document.getElementById('cart');
+  cartList.innerHTML = ''; // Clear the current cart list
+
+  cart.forEach((item, index) => {
+      cartList.innerHTML += `
+          <li class="d-flex justify-content-between align-items-center mb-2">
+              <img src="${item.img}" alt="${item.name}" width="80" height="80" class="me-2">  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+              <div class="flex-grow-1 text-dark">
+                  <strong class="text-success">${item.name}</strong>  &nbsp;&nbsp;&nbsp;
+                  Price: ₹${item.price}  
+              </div>
+              <div class="text-primary">
+                  Qty: 
+                  <input type="number" class="form-control form-control-sm d-inline-block w-auto quantity" min="1" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)">
+              </div>
+              <button class="btn btn-sm btn-danger ms-2" onclick="removeItem(${index})">Remove</button>
+          </li>
+          <hr>
+      `;
+  });
+
+  // Update the subtotal
+  document.getElementById('subtotal').innerText = `₹${total.toFixed(2)}`;
+  updateCart(); // Update total with fast delivery option if selected
+}
+
+function removeItem(index) {
+  const item = cart[index];
+  total -= item.price * item.quantity; // Adjust total
+  cart.splice(index, 1); // Remove item from cart
+  renderCart(); // Re-render cart
+}
+
+function updateQuantity(index, newQty) {
+  const item = cart[index];
+  const newQuantity = parseInt(newQty);
+
+  if (newQuantity > 0) {
+      const priceDifference = (newQuantity - item.quantity) * item.price;
+      item.quantity = newQuantity;
+      total += priceDifference; // Adjust total based on quantity change
+  } else {
+      removeItem(index); // If quantity is set to 0, remove the item
+  }
+
+  renderCart(); // Re-render cart
+}
+
+function updateCart() {
+  const fastDelivery = document.getElementById("fastDelivery").checked ? 100 : 0;
+  const grandTotal = total + fastDelivery;
+
+  // Update the grand total
+  document.getElementById('total').innerText = `₹${grandTotal.toFixed(2)}`;
+}
+
+</script>
+<script>
+  function toggleFavorite(icon) {
+    icon.classList.toggle('filled');
+}
+</script>
 
 </body>
 </html>
